@@ -1,0 +1,71 @@
+]0;~/project/pothole-detector/app/templates[01;34m~/project/pothole-detector/app/templates[00m$ [K]0;~/project/pothole-detector/app/templates[01;34m~/project/pothole-detector/app/templates[00m$ python3 .min[K[K[K[Kmain.home[K[K[K[KHome[K[K[K[Kpy
+python3: can't open file 'main.py': [Errno 2] No such file or directory
+]0;~/project/pothole-detector/app/templates[01;34m~/project/pothole-detector/app/templates[00m$ pyton[K[Khon3 main.py
+python3: can't open file 'main.py': [Errno 2] No such file or directory
+]0;~/project/pothole-detector/app/templates[01;34m~/project/pothole-detector/app/templates[00m$ cd ..
+]0;~/project/pothole-detector/app[01;34m~/project/pothole-detector/app[00m$ ls
+[0m[01;34m'Pothole Site'[0m   ai.py    [01;34mimages[0m    requirements.txt   [01;34mtemplates[0m   uwsgi.ini
+ [01;34m__pycache__[0m     ai2.py   main.py   [01;34mstatic[0m             utils.py    [01;34myolo[0m
+]0;~/project/pothole-detector/app[01;34m~/project/pothole-detector/app[00m$ pytin[K[Kon[K[Khon3 main.py
+[INFO] loading YOLO from disk...
+Try to open
+
+    https://cocalc4.ai-camp.org/eef6990b-5fb5-421c-b0b4-27c20228749d/port/12347/
+
+
+ * Serving Flask app 'main' (lazy loading)
+ * Environment: production
+[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
+[2m   Use a production WSGI server instead.[0m
+ * Debug mode: on
+Traceback (most recent call last):
+  File "main.py", line 123, in <module>
+    app.run(host = '0.0.0.0', port=port, debug=True)
+  File "/projects/eef6990b-5fb5-421c-b0b4-27c20228749d/.local/lib/python3.8/site-packages/flask/app.py", line 922, in run
+    run_simple(t.cast(str, host), port, self, **options)
+  File "/projects/eef6990b-5fb5-421c-b0b4-27c20228749d/.local/lib/python3.8/site-packages/werkzeug/serving.py", line 982, in run_simple
+    s.bind(server_address)
+OSError: [Errno 98] Address already in use
+]0;~/project/pothole-detector/app[01;34m~/project/pothole-detector/app[00m$ 
+]0;~/project/pothole-detector/app[01;34m~/project/pothole-detector/app[00m$ cd main.[K[K[K[K[K[K[K[K[K]0;~/project/pothole-detector/app[01;34m~/project/pothole-detector/app[00m$ 
+]0;~/project/pothole-detector/app[01;34m~/project/pothole-detector/app[00m$ pyto[Khon3 main.py
+[INFO] loading YOLO from disk...
+Try to open
+
+    https://cocalc4.ai-camp.org/eef6990b-5fb5-421c-b0b4-27c20228749d/port/12348/
+
+
+ * Serving Flask app 'main' (lazy loading)
+ * Environment: production
+[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
+[2m   Use a production WSGI server instead.[0m
+ * Debug mode: on
+Traceback (most recent call last):
+  File "main.py", line 123, in <module>
+    app.run(host = '0.0.0.0', port=port, debug=True)
+  File "/projects/eef6990b-5fb5-421c-b0b4-27c20228749d/.local/lib/python3.8/site-packages/flask/app.py", line 922, in run
+    run_simple(t.cast(str, host), port, self, **options)
+  File "/projects/eef6990b-5fb5-421c-b0b4-27c20228749d/.local/lib/python3.8/site-packages/werkzeug/serving.py", line 982, in run_simple
+    s.bind(server_address)
+OSError: [Errno 98] Address already in use
+]0;~/project/pothole-detector/app[01;34m~/project/pothole-detector/app[00m$ python3 main.py
+[INFO] loading YOLO from disk...
+Try to open
+
+    https://cocalc4.ai-camp.org/eef6990b-5fb5-421c-b0b4-27c20228749d/port/12348/
+
+
+ * Serving Flask app 'main' (lazy loading)
+ * Environment: production
+[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
+[2m   Use a production WSGI server instead.[0m
+ * Debug mode: on
+Traceback (most recent call last):
+  File "main.py", line 123, in <module>
+    app.run(host = '0.0.0.0', port=port, debug=True)
+  File "/projects/eef6990b-5fb5-421c-b0b4-27c20228749d/.local/lib/python3.8/site-packages/flask/app.py", line 922, in run
+    run_simple(t.cast(str, host), port, self, **options)
+  File "/projects/eef6990b-5fb5-421c-b0b4-27c20228749d/.local/lib/python3.8/site-packages/werkzeug/serving.py", line 982, in run_simple
+    s.bind(server_address)
+OSError: [Errno 98] Address already in use
+]0;~/project/pothole-detector/app[01;34m~/project/pothole-detector/app[00m$ 

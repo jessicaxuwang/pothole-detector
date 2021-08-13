@@ -1,0 +1,18 @@
+Python 3.8.5 (default, May 27 2021, 13:30:53) 
+[GCC 9.3.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> [K>>> python3 main.py
+  File "<stdin>", line 1
+    python3 main.py
+            ^
+SyntaxError: invalid syntax
+>>> [K>>> [K>>> cd
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'cd' is not defined
+>>> python3 main.py[C9.py[1P.py(.py).py
+  File "<stdin>", line 1
+    python3 main().py
+            ^
+SyntaxError: invalid syntax
+>>> 

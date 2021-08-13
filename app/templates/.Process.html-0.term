@@ -1,0 +1,16 @@
+]0;~/project/pothole-detector/app/templates[01;34m~/project/pothole-detector/app/templates[00m$ [K]0;~/project/pothole-detector/app/templates[01;34m~/project/pothole-detector/app/templates[00m$ pythpn\[K[K[Kon3 .[Kmain.py
+python3: can't open file 'main.py': [Errno 2] No such file or directory
+]0;~/project/pothole-detector/app/templates[01;34m~/project/pothole-detector/app/templates[00m$ dc..
+bash: dc..: command not found
+]0;~/project/pothole-detector/app/templates[01;34m~/project/pothole-detector/app/templates[00m$ ls
+Home.html  Process.html  Results.html  Team-Members.html  home.html  results.html
+]0;~/project/pothole-detector/app/templates[01;34m~/project/pothole-detector/app/templates[00m$ cd..
+bash: cd..: command not found
+]0;~/project/pothole-detector/app/templates[01;34m~/project/pothole-detector/app/templates[00m$ ce[Kd...
+bash: cd...: command not found
+]0;~/project/pothole-detector/app/templates[01;34m~/project/pothole-detector/app/templates[00m$ cd
+]0;~[01;34m~[00m$ ls
+[0m[01;34m2021-08-02-102448[0m  [01;35mconfusion.png[0m          [01;34minstructor[0m        [01;34mstudents[0m
+[01;34mBryan[0m              curving_fitting.ipynb  [01;34mpothole-detector[0m  terminal.term
+[01;34mLectures[0m           [01;34mdarknet[0m                [01;34mproject[0m
+]0;~[01;34m~[00m$ 

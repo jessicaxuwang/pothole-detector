@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="page_type" content="np-template-header-footer-from-plugin">
+    <title>Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='nicepage.css') }}" media="screen">
+<link rel="stylesheet" href="{{ url_for('static', filename='Results.css') }}" media="screen">
+    <script class="u-script" type="text/javascript" src="{{ url_for('static', filename='jquery.js') }}" defer=""></script>
+    <script class="u-script" type="text/javascript" src="{{ url_for('static', filename='nicepage.js') }}" defer=""></script>
+    <meta name="generator" content="Nicepage 3.22.0, nicepage.com">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
+    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i|Lato:100,100i,300,300i,400,400i,700,700i,900,900i">
+    
+    
+    
+    
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": ""
+}</script>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="Results">
+    <meta property="og:type" content="website">
+  </head>
+  <body class="u-body"><header class="u-clearfix u-header u-palette-1-base u-sticky u-sticky-eeb6 u-header" id="sec-e24d"><div class="u-clearfix u-sheet u-sheet-1">
+        <nav class="u-menu u-menu-dropdown u-offcanvas u-menu-1">
+          <div class="menu-collapse u-custom-font u-font-lato" style="font-size: 1.25rem; letter-spacing: 0px; font-weight: 400;">
+            <a class="u-button-style u-custom-hover-color u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-text-active-color u-custom-text-color u-custom-text-hover-color u-custom-top-bottom-menu-spacing u-nav-link u-palette-1-base u-text-active-palette-1-base u-text-hover-palette-2-base" href="#" style="background-image: none;">
+              <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use></svg>
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><symbol id="menu-hamburger" viewBox="0 0 16 16" style="width: 16px; height: 16px;"><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
+</symbol>
+</defs></svg>
+            </a>
+          </div>
+          <div class="u-custom-menu u-nav-container">
+            <ul class="u-custom-font u-font-lato u-nav u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-button-style u-hover-palette-1-light-1 u-nav-link u-text-active-white u-text-body-alt-color u-text-hover-white" href="{{ url_for('home') }}" style="padding: 10px 20px;">Home</a>
+</li><li class="u-nav-item"><a class="u-button-style u-hover-palette-1-light-1 u-nav-link u-text-active-white u-text-body-alt-color u-text-hover-white" href="{{ url_for('process') }}" style="padding: 10px 20px;">Process</a>
+</li><li class="u-nav-item"><a class="u-button-style u-hover-palette-1-light-1 u-nav-link u-text-active-white u-text-body-alt-color u-text-hover-white" href="{{ url_for('team_members') }}" style="padding: 10px 20px;">Team Members</a>
+</li></ul>
+          </div>
+          <div class="u-custom-menu u-nav-container-collapse">
+            <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+              <div class="u-sidenav-overflow">
+                <div class="u-menu-close"></div>
+                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{ url_for('home') }}" style="padding: 10px 20px;">Home</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{ url_for('process') }}" style="padding: 10px 20px;">Process</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{ url_for('team_members') }}" style="padding: 10px 20px;">Team Members</a>
+</li></ul>
+              </div>
+            </div>
+            <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+          </div>
+        </nav>
+        <h3 class="u-custom-font u-headline u-text u-text-body-alt-color u-text-1">
+          <a href="/">Pothole Detector by AI</a>
+        </h3>
+      </div></header>
+    <section class="u-clearfix u-section-1" id="sec-fb4f">
+      <div class="u-align-left u-container-style u-image u-layout-cell u-left-cell u-shading u-size-30 u-size-xs-60" style="background-image: url({{ url_for('files', filename=filename) }}); background-size: contain;" data-image-width="1280" data-image-height="913"><div class="u-clearfix u-sheet u-sheet-1"></div></div>
+    </section>
+    <section class="u-clearfix u-palette-1-base u-section-2" id="sec-38dd">
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        
+        {% if length == 0 %}
+        <p class="u-align-center u-custom-font u-font-lato u-text u-text-1">0 potholes found.</p>
+        {% endif %}
+        {% if length == 1 %}
+        <p class="u-align-center u-custom-font u-font-lato u-text u-text-1">1 pothole found with {{confidences}} confidence.</p>
+        {% endif %}
+        {% if length > 1 %}
+        <p class="u-align-center u-custom-font u-font-lato u-text u-text-1">{{length}} potholes found with {{confidences}} confidence.</p>
+        {% endif %}
+      </div>
+    </section>
+    <section class="u-clearfix u-palette-1-dark-1 u-section-3" id="sec-a7dd">
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <p class="u-custom-font u-font-lato u-text u-text-1">
+          <span style="font-size: 1.25rem;">
+            <span style="font-size: 2.25rem;"> Our model isn't perfect.</span>
+            <br> Machine learning is an incredibly complicated field to master, and given we only had 3 weeks to learn AI from scratch, errors are bound to happen. This meant that our data set was somewhat limited and may have bias that influenced our model's predicted potholes.
+          </span>
+          <br>
+          <br>
+          <span style="font-size: 20px;">To mitigate these problems as much as possible, we generated confusion matrices of our model to evaluate how well it was doing and used our validation sets to fine tune our model to perform as best as it possibility can in our limited time frame.&nbsp;</span>
+          <br>
+          <br>
+          <br>
+        </p>
+        <img class="u-image u-image-default u-image-1" src="{{ url_for('static', filename='images/white_conf_matrix.png') }}" alt="" data-image-width="1362" data-image-height="1425">
+      </div>
+    </section>
+    
+    
+    
+    <section class="u-backlink u-clearfix u-grey-80">
+      Pothole Detector
+    </section>
+  </body>
+</html>
