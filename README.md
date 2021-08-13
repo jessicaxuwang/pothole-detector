@@ -1,3 +1,5 @@
+View the webiste here: https://pothole-detector.ai-camp.org/
+
 # cv_yolo_scaffold
 A scaffold for deploying dockerized flask applications showcasing student computer vision projects using yolo.
 
