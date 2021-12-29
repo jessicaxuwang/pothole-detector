@@ -68,7 +68,7 @@
             <p class="u-custom-font u-font-lato u-text u-text-1">Process</p>
           </div>
         </div>
-        <p class="u-custom-font u-font-lato u-text u-text-body-alt-color u-text-2"> We initally started out brainstorming several concepts of what our model could be and how it can be used to better people's everyday lives. After narrowing down our ideas, we settled on potholes as it is a common natural phenomenon that when detected, can greatly increase the safety of driving on the roads. </p>
+        <p class="u-custom-font u-font-lato u-text u-text-body-alt-color u-text-2"> We initally started out brainstorming several ideas for what machine learning model we could make and how it could better people's everyday lives. After narrowing down our ideas, we settled on potholes as it is a common natural phenomenon that when detected, can greatly increase the safety of driving on the roads. </p>
       </div>
     </section>
     <section class="u-clearfix u-palette-1-dark-1 u-section-2" id="sec-b989">
@@ -82,7 +82,7 @@
           <span style="font-size: 1.875rem;">
             <span style="font-weight: 400;">Data Collection </span>
             <br>
-          </span> When making an AI, the most important thing to perfect is your data. When using a supervised learning model, you need to label all the data so you can have a desired output for the neural network to work off of. For example, in our case, if there was a pothole in an image and our model did not detect any, the weights would need to be adjusted to get the desired output. Even when using a model with pretrained weights, a large amount of data, labeled photos of potholes in our case, is required for training.&nbsp;
+          </span> As we based our pothole detector around the YOLO v4 supervised learning model, this meant that we needed to find and label a large amount of pothole images to train our model. This would ultimatly be the key component that determines the model's accuracy as the images we fed would influence the way that the model's weights are adjusted to detect potholes. Labelbox would be used to label the potholes in the images that we found.&nbsp;
         </p>
         <p class="u-custom-font u-font-lato u-text u-text-2">
           <span style="font-size: 1.875rem;">
@@ -97,7 +97,7 @@
         </div>
         <p class="u-custom-font u-font-lato u-text u-text-3">
           <span style="font-size: 1.875rem;">Formatting the data<br>
-          </span> After we had our training, testing, and validation sets figured out it was time to change the format of the data we had collected. Because we had collected our data from a number of different sources, we had data that were incompatible with our model.&nbsp; After coding in various functions to clean up the files to our desired file types, we could then begin running our model.
+          </span> Because we had collected our data from a number of different sources, we had some data that were incompatible with our model.&nbsp; After coding in various functions to clean up the files to our desired file extensions as well as reorganizing the files into their proper image sets, we were ready to begin training our model.
         </p>
         <div class="u-container-style u-group u-palette-1-light-1 u-preserve-proportions u-shape-rectangle u-group-3">
           <div class="u-container-layout u-valign-middle u-container-layout-3">
@@ -106,7 +106,7 @@
         </div>
         <p class="u-custom-font u-font-lato u-text u-text-4">
           <span style="font-size: 1.875rem;">Model Training<br>
-          </span>To begin the training process, we used a NVIDIA Tesla T4 GPU with 16 GB of VRAM and began feeding in our data. After around 12 hours it was done and ready to test. When testing photos manually, it seemed to work seamlessly, however, our validatation dataset had other things to say about it. This is when we began to get mixed messages about the performance and really started using confusion matrices to dive deeper into our problem.&nbsp;
+          </span>For the training process, we used a NVIDIA Tesla T4 GPU with 16 GB of VRAM and began feeding in our data. After around 12 hours, we would be able to deploy our site for the first time and tested it out. Although our model appeared to be working seamlessly from the few pothole photos we manually tested, our validatation dataset soon showed us the opposite. From the confusion matrices that we generated, we noticed our model had a bit too many false negativess in its detection.&nbsp;
         </p>
         <div class="u-container-style u-group u-palette-1-light-1 u-preserve-proportions u-shape-rectangle u-group-4">
           <div class="u-container-layout u-valign-middle u-container-layout-4">
@@ -115,7 +115,7 @@
         </div>
         <p class="u-custom-font u-font-lato u-text u-text-5">
           <span style="font-size: 1.875rem;">Inherent Problems<br>
-          </span>After diving deeper into the issue, the variation in labeling techniques looked to be the cause. As we had a multitude of people labeling the data, there was certain biases toward what counted as a pothole and what didn't. Because of this fact, images with many small potholes are bound to not get labeled. To combat this, we had people reviewing back on previously labeled data to make a more uniform dataset with minimal bias in it. After further review, the new data was fed into our model and we arrived at a much better model.<br>
+          </span>After diving deeper into the issue, the variation in labeling techniques seemed to be the cause. As we had a multitude of people labeling the data, there were certain biases toward what counted as a pothole and what didn't when labeling. To combat this, we had people reviewing previously labeled data with set standards to make a more uniform dataset with minimal bias in it. After further review, the new data was fed into our model and we arrived at a much better model.<br>
         </p>
         <div class="u-container-style u-group u-palette-1-light-1 u-preserve-proportions u-shape-rectangle u-group-5">
           <div class="u-container-layout u-valign-middle u-container-layout-5">
@@ -124,11 +124,7 @@
         </div>
       </div>
     </section>
-    
-    
-    
-    <section class="u-backlink u-clearfix u-grey-80">
-      Pothole Detector
+    <section class="u-backlink u-clearfix u-palette-1-dark-1">
     </section>
   </body>
 </html>
