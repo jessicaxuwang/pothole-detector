@@ -22,7 +22,7 @@ from utils import get_base_url, allowed_file, and_syntax
     cv scaffold code
     uncomment below line when ready for production deployment
 '''
-# app = Flask(__name__)
+app = Flask(__name__)
 
 UPLOAD_FOLDER = 'images'
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
