@@ -4,7 +4,7 @@ FROM tiangolo/uwsgi-nginx-flask:python3.8
 
 # These will be replaced in the automatic deployment process
 ENV LISTEN_PORT opsport
-EXPOSE opsport
+EXPOSE 9000
 
 COPY ./app /app
 
